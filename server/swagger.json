@@ -1,0 +1,61 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "YourWeather",
+    "description": "Weather app that obtains weather information for your area.",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:8000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Weather API",
+      "description": "API for retrieving data based on zip code."
+    }
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/api/weather/current/{zip}": {
+      "get": {
+        "tags": ["Current Weather Data"],
+        "summary": "Get current weather data for location based on zip code.",
+        "parameters": [
+          {
+            "name": "zip",
+            "in": "path",
+            "description": "Zip code of area to obtain information."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "This service allows you to get the current weather information."
+          }
+        }
+      }
+    },
+    "/api/weather/forecast/{zip}": {
+      "get": {
+        "tags": ["Current Forecast Data"],
+        "summary": "Get current forecast data for 3 days. Location based on zip code.",
+        "parameters": [
+          {
+            "name": "zip",
+            "in": "path",
+            "description": "Zip code of area to obtain information."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "This service allows you to get the current weather information."
+          }
+        }
+      }
+    }
+  }
+}
