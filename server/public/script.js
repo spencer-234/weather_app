@@ -20,7 +20,7 @@ button.addEventListener('click', () => {
 
 // fetch weather data from server to populate page
 const getCurrentWeather = async (zip) => {
-  await fetch(`http://localhost:8000/api/weather/current/${zip}`)
+  await fetch(`https://yourweather-qm3i.onrender.com/api/weather/current/${zip}`)
     .then((res) => res.json())
     .then((data) => {
       clearFields();

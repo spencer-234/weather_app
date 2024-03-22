@@ -17,7 +17,7 @@ button.addEventListener('click', () => {
 
 // fetch forecast data from server and populate page
 const getCurrentWeather = async (zip) => {
-  await fetch(`http://localhost:8000/api/weather/forecast/${zip}`)
+  await fetch(`https://yourweather-qm3i.onrender.com/api/weather/forecast/${zip}`)
     .then((res) => res.json())
     .then((data) => {
         clearTemplate();
