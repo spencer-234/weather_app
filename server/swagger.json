@@ -9,7 +9,7 @@
       "url": "https://opensource.org/licenses/MIT"
     }
   },
-  "host": "localhost:8000",
+  "host": "yourweather-qm3i.onrender.com",
   "basePath": "/",
   "tags": [
     {
@@ -17,7 +17,7 @@
       "description": "API for retrieving data based on zip code."
     }
   ],
-  "schemes": ["http", "https"],
+  "schemes": ["https"],
   "consumes": ["application/json"],
   "produces": ["application/json"],
   "paths": {
