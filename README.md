@@ -12,4 +12,6 @@ The server is made using NodeJS, express, swagger.json, and axios. For retrievin
 This API sends back weather data based on the zip code passed to it. When a request is retrieved by the server, it will take the zip code from the request
 parameters and pass that to the API. Once it gets the data back, it will send it to the client.
 
+### Live site might take awhile to load. I used render for free hosting and if no requests are made for awhile the server will stop running.
+### Once a request is made after awhile, the server has to start up again.
 Live Site: [YourWeather](https://yourweather-qm3i.onrender.com/index.html)
